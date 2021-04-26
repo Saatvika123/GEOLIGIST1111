@@ -1,13 +1,13 @@
 class Stone{
-    constructor(x,y,width,height){
+    constructor(x,y,50,80){
         var options={
             restitution:0.8,
             friction:1,
             density:1
         }
         this.body=Bodies.rectangle(x,y,width,height,options);
-        this.width=width;
-        this.height=height;
+        this.width=50;
+        this.height=80;
         World.add(world,this.body);
     }
     display(){
